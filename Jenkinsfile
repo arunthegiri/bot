@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh 'pip3 install -r requirements.txt'
             }
+        }
         stage('Deploy') {
             steps {
                 sh 'streamlit run Current_price.py'
