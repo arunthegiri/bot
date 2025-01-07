@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Getting requirements') {
             steps {
-                sh 'pip3 install -r requirements.txt'
+                sh '/usr/bin/pip3 install -r requirements.txt'
             }
         }
         stage('Deploy') {
